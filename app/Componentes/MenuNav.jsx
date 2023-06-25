@@ -1,20 +1,21 @@
 import React from 'react'
 import estilos from '../Styles/MenuNav.module.css'
+import Link from 'next/link'
 const MenuNav = () => {
   return (
 <nav className={estilos.nav}>
   <ul>
     <li>
-      <a href="#">Home</a>
+      <Link href="#">Home</Link>
     </li>
     <li>
-      <a href="#">About</a>
+      <Link href="#">About</Link>
     </li>
     <li>
-      <a href="#">Projects</a>
+      <Link href="#">Projects</Link>
     </li>
     <li>
-      <a href="#">Contact</a>
+      <Link href="#">Contact</Link>
     </li>
   </ul>
 </nav>
