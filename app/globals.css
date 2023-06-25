@@ -2,26 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+h1 {
+  @apply text-4xl;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.btn-contact {
+  @apply text-white bg-smoke-800 px-2 py-1 rounded-2xl border-2 my-5 border-fercho-400 flex gap-3
+  transition-all ease-in-out
+  ;
+  box-shadow:-0.1em 0.4em 0px 0px #27F625;
+}
+.btn-contact:hover {
+  @apply text-smoke-800 bg-fercho-400 px-2 py-1 rounded-2xl border-2 my-5 border-fercho-400 ;
+}
+.btn-contact:active {
+
+  @apply text-white bg-smoke-800 px-2 py-1 rounded-2xl border-2 my-5 border-fercho-400 ;
+  box-shadow:-0.1em 0.1em 0px 0px #27F625;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* estilo para icono ded scroll hacia abajo */
+.down {
+  @apply animate-bounce;
+  /* posicion en la parte inferior del hero */
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+
+  
 }

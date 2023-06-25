@@ -1,0 +1,15 @@
+.nav {
+    @apply w-full h-16 bg-smoke-900 flex items-center justify-center px-4;
+  }
+  
+  .nav ul {
+    @apply flex items-center justify-between;
+  }
+  
+  .nav li {
+    @apply mr-6;
+  }
+  
+  .nav a {
+    @apply text-slate-50 hover:text-fercho-400 transition-colors ease-in-out;
+  }
