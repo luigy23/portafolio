@@ -13,11 +13,11 @@ h1 {
   box-shadow:-0.1em 0.4em 0px 0px #27F625;
 }
 .btn-contact:hover {
-  @apply text-smoke-800 bg-fercho-400 px-2 py-1 rounded-2xl border-2 my-5 border-fercho-400 ;
+  @apply text-smoke-800 bg-fercho-400 ;
 }
 .btn-contact:active {
 
-  @apply text-white bg-smoke-800 px-2 py-1 rounded-2xl border-2 my-5 border-fercho-400 ;
+  @apply text-white bg-smoke-800  ;
   box-shadow:-0.1em 0.1em 0px 0px #27F625;
 }
 
