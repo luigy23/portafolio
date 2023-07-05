@@ -12,6 +12,8 @@ const Proyectos = () => {
     
     <div className='mt-5 flex flex-wrap w-full p-2 md:max-w-3xl items-center justify-center gap-2 md:flex-row flex-col'>
         <Proyecto nombre="Segurmax RG" img={Proyecto2} des="Sitio Web Coorporativo con distintas paginas para cada servicio" />
+        <Proyecto nombre="Segurmax RG" img={Proyecto2} des="Sitio Web Coorporativo con distintas paginas para cada servicio" />
+        <Proyecto nombre="Segurmax RG" img={Proyecto2} des="Sitio Web Coorporativo con distintas paginas para cada servicio" />
 
     </div>
 
