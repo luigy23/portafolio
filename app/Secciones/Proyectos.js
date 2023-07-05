@@ -6,8 +6,8 @@ import Proyecto from '../Componentes/Proyecto'
 const Proyectos = () => {
     return (
     <>
-    <h1 className='text-slate-50 font-bold uppercase '>Proyectos</h1>
-    <p className='text-slate-50 font-medium mt-2  '>Estos son algunos de mis proyectos</p>
+    <h1 className='text-smoke-700 font-bold uppercase '>Proyectos</h1>
+    <p className='text-smoke-700 font-medium mt-2  '>Estos son algunos de mis proyectos</p>
   
     
     <div className='mt-5 flex flex-wrap w-full p-2 md:max-w-3xl items-center justify-center gap-2 md:flex-row flex-col'>
