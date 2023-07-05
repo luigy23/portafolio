@@ -1,5 +1,14 @@
 .nav {
     @apply w-full h-16 bg-smoke-900 flex items-center justify-center px-4;
+    /* hacemos el menu siga con el scroll pero que ocupe su espacio al inicio */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    
+
   }
   
   .nav ul {
