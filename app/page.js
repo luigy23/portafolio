@@ -17,7 +17,7 @@ export default function Home() {
 
 
     </main>
-    <section className='w-full h-screen bg-slate-50 flex flex-col items-center justify-center'>
+    <section className='w-full pt-4 min-h-screen  bg-smoke-800 flex flex-col items-center justify-center'>
       
       <Proyectos />
     </section>

@@ -1,0 +1,29 @@
+.proyecto{
+    @apply  text-slate-50  rounded-md  items-center 
+    flex   justify-center  cursor-pointer overflow-hidden
+    transition-colors ease-in-out hover:bg-smoke-900 border-fercho-400 border-2
+    ;
+    box-shadow:-0.4em 0.4em 0px 0px #27F625;
+}
+.proyecto2{
+    @apply  text-slate-50  rounded-md  items-center 
+    flex   justify-center  cursor-pointer overflow-hidden
+    transition-colors ease-in-out hover:bg-smoke-900 border-fercho-400 border-2
+    ;
+    box-shadow:0.4em 0.4em 0px 0px #27F625;
+}
+
+/* cuando haya un hover en el .proyecto, la imagen aumenta su tamaño: */
+.proyecto:hover .imagen{
+    @apply  scale-110;
+}
+.proyecto2:hover .imagen{
+    @apply  scale-110;
+}
+
+
+
+.imagen{
+    @apply    rounded-md  transition-transform ease-in-out duration-300
+    ;
+}
