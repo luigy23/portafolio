@@ -20,8 +20,8 @@ const Proyecto = ({ nombre, img, des, tec }) => {
                 <div className={estilos.content}>
                     <h3 className='font-semibold text-xl'>{nombre}</h3>
                     <p className=' text-sm mt-1 text-slate-300 whitespace-pre-wrap'>{des}</p>
-                    {tec.map((tecnologia) => (
-                        <span className='text-sm bg-fercho-300 px-2 py-1 rounded-lg text-stone-950 mt-4'>{tecnologia}</span>
+                    {tec.map((tecnologia, index) => (
+                        <span key={index} className='text-sm bg-fercho-300 px-2 py-1 rounded-lg text-stone-950 mt-4'>{tecnologia}</span>
                     ))
                     }
 
