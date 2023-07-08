@@ -1,3 +1,5 @@
+"use client"
+
 import Image from 'next/image'
 import Left_Arrow from './Icons/Left_Arrow'
 import Down_Arrow from './Icons/Down_Arrow'
