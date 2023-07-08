@@ -1,0 +1,13 @@
+.links {
+
+    @apply flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 ;
+}
+
+
+.links li .tab {
+    @apply inline-block p-4 rounded-t-lg cursor-pointer hover:bg-smoke-900 transition-colors ease-in-out;
+}
+
+.tab_active {
+    @apply inline-block p-4 rounded-t-lg cursor-pointer bg-fercho-400 text-smoke-800  ;
+}

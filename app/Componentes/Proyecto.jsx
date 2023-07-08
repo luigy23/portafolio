@@ -5,38 +5,21 @@ import estilos from '@/app/Styles/Proyecto.module.css'
 const Proyecto = ({ nombre, img, des, or }) => {
     return (
 
-        or  ?
-            (<div className={estilos.proyecto2}>
-                <div className='  items-center flex  flex-col rou '>
+<div className={estilos.proyecto}>
+                <div className={estilos.contenedorImg}>
                     <Image
                         src={img}
                         alt={nombre}
-                        width={320}
+                        height={224}
                         className={estilos.imagen}
                     />
                 </div>
-                <div className='flex flex-col  pr-4  '>
+                <div className='flex flex-col  pr-4 w-3/5 '>
                     <h3 className='font-semibold text-xl'>{nombre}</h3>
-                    <p className=' text-sm mt-1 text-slate-300 '>{des}</p>
+                    <p className=' text-sm mt-1 text-slate-300 whitespace-pre-wrap'>{des}</p>
                 </div>
 
-            </div>) 
-            : (
-                <div className={estilos.proyecto}>
-                <div className='flex flex-col  pl-4  '>
-                    <h3 className='font-semibold text-xl'>{nombre}</h3>
-                    <p className=' text-sm mt-1 text-slate-300 '>{des}</p>
-                </div>
-                <div className='  items-center flex  flex-col rou '>
-                    <Image
-                        src={img}
-                        alt={nombre}
-                        width={320}
-                        className={estilos.imagen}
-                    />
-                </div>
             </div>
-            )
 
 
 
