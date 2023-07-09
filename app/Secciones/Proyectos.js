@@ -13,11 +13,27 @@ import { getProyectos } from '../Utils/supabase'
 const Proyectos = () => {
 
   const [proyectos, setProyectos] = useState([])
+  const [proyectosFiltrados, setProyectosFiltrados] = useState([])
   useEffect(() => {
     getProyectos().then((data) => {
       setProyectos(data)
+      setProyectosFiltrados(data)
     })
   }, [])
+
+
+  //funcion para filtrar los proyectos por tecnologias (verifica si el proyecto tiene la tecnologia que se le pasa por parametro, en el array de tecnologias del proyecto)
+  const filtrar = (tecnologia) => {
+    if (tecnologia === 'All') {
+      setProyectosFiltrados(proyectos)
+      return
+    }
+    let proyectosFiltrados = proyectos.filter((proyecto) => {
+      return proyecto.Tecnologias.includes(tecnologia)
+    })
+    setProyectosFiltrados(proyectosFiltrados)
+  }
+
 
 
   return (
@@ -27,11 +43,12 @@ const Proyectos = () => {
 
 
       <div className={estilos.proyectos}>
-        <Tabs />
+        <Tabs filtrar={filtrar} />
+        
+ 
         {
-          // map con proyectos con el prop "or" true cada 1 proyecto:
-          proyectos && 
-          proyectos.map((proyecto, index) => {
+          proyectosFiltrados.length > 0 &&
+          proyectosFiltrados.map((proyecto, index) => {
               return (
                 <Proyecto key={index} nombre={proyecto.Nombre} des={proyecto.Descripcion} img={proyecto.img} tec={proyecto.Tecnologias} />
               )
