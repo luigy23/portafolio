@@ -18,12 +18,16 @@ const Proyectos = () => {
     getProyectos().then((data) => {
       setProyectos(data)
       setProyectosFiltrados(data)
+      
     })
+
   }, [])
 
 
   //funcion para filtrar los proyectos por tecnologias (verifica si el proyecto tiene la tecnologia que se le pasa por parametro, en el array de tecnologias del proyecto)
   const filtrar = (tecnologia) => {
+
+
     if (tecnologia === 'All') {
       setProyectosFiltrados(proyectos)
       return
@@ -47,7 +51,8 @@ const Proyectos = () => {
         
  
         {
-          proyectosFiltrados.length > 0 &&
+          proyectosFiltrados &&
+          proyectosFiltrados &&
           proyectosFiltrados.map((proyecto, index) => {
               return (
                 <Proyecto key={index} nombre={proyecto.Nombre} des={proyecto.Descripcion} img={proyecto.img} tec={proyecto.Tecnologias} />

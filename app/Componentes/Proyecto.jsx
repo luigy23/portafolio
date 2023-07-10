@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import estilos from '@/app/Styles/Proyecto.module.css'
+import Logo from '@/public/logoV.svg'
 
 const Proyecto = ({ nombre, img, des, tec }) => {
     return (
@@ -8,7 +9,7 @@ const Proyecto = ({ nombre, img, des, tec }) => {
 <div className={estilos.proyecto}>
                 <div className={estilos.contenedorImg}>
                     <Image
-                        src={img}
+                        src={(img ? img : Logo)}
                         alt={nombre}
                         width="400"
                         height="400"
@@ -20,10 +21,14 @@ const Proyecto = ({ nombre, img, des, tec }) => {
                 <div className={estilos.content}>
                     <h3 className='font-semibold text-xl'>{nombre}</h3>
                     <p className=' text-sm mt-1 text-slate-300 whitespace-pre-wrap'>{des}</p>
-                    {tec.map((tecnologia, index) => (
-                        <span key={index} className='text-sm bg-fercho-300 px-2 py-1 rounded-lg text-stone-950 mt-4'>{tecnologia}</span>
+                    <div className='mt-4'>
+                    {
+                    tec &&
+                    tec.map((tecnologia, index) => (
+                        <span key={index} className='text-sm bg-fercho-300 px-2 py-1 rounded-lg mx-1 text-stone-950 '>{tecnologia}</span>
                     ))
                     }
+                    </div>
 
                 </div>
 
