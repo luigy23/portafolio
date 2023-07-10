@@ -15,6 +15,8 @@ const Proyecto = ({ nombre, img, des, tec }) => {
                         height="400"
                         sizes="100vw"
                         
+                        placeholder='empty'
+                        
                         className={estilos.imagen}
                     />
                 </div>

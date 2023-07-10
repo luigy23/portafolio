@@ -4,7 +4,7 @@
 }
 
 
-.links li .tab {
+.links li  {
     @apply inline-block p-4 rounded-t-lg cursor-pointer hover:bg-smoke-900 transition-colors ease-in-out;
 }
 

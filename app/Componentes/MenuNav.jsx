@@ -12,7 +12,7 @@ const MenuNav = () => {
       <Link href="#">About</Link>
     </li>
     <li>
-      <Link href="#">Projects</Link>
+      <Link href="#proyectos">Projects</Link>
     </li>
     <li>
       <Link href="#">Contact</Link>
