@@ -31,3 +31,35 @@ h1 {
 
   
 }
+
+.blob::before {
+  @apply absolute md:w-52 md:h-52 w-32 h-32 -left-20 top-[2%] rounded-full bg-emerald-400 opacity-100 z-0   ;
+  content: "";
+  filter: blur(120px);
+
+
+}
+
+.blob::after {
+  @apply absolute md:w-52 md:h-52 w-32 h-32 -right-20 top-[22%] rounded-full bg-fercho-400 opacity-100 z-0   ;
+  content: "";
+  filter: blur(120px);
+
+
+}
+.blob::before {
+  @apply absolute md:w-52 md:h-52 w-32 h-32 -left-20 top-[2%] rounded-full bg-emerald-400 opacity-100 z-0   ;
+  content: " ";
+  filter: blur(120px);
+}
+
+.blob2::before {
+  @apply absolute md:w-52 md:h-52 w-32 h-36 -right-20 bottom-[2%] rounded-full bg-emerald-400 opacity-100 z-0   ;
+  content: " ";
+  filter: blur(120px);
+}
+.blob2::after {
+  @apply absolute md:w-52 md:h-52 w-32 h-36 -left-20 bottom-[2%] rounded-full bg-fercho-400 opacity-100 z-0   ;
+  content: " ";
+  filter: blur(120px);
+}
