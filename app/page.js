@@ -5,7 +5,7 @@ import Left_Arrow from './Icons/Left_Arrow'
 import Down_Arrow from './Icons/Down_Arrow'
 import MenuNav from './Componentes/MenuNav'
 import Proyectos from './Secciones/Proyectos'
-import logo from '@/public/logoV.svg'
+import logo from '@/public/logoB.svg'
 import Link from 'next/link'
 import About from './Secciones/About'
 
