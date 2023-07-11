@@ -45,7 +45,7 @@ const Proyectos = () => {
     <>
     <section id='proyectos' className='w-full py-12 min-h-screen relative  bg-smoke-800 flex flex-col items-center justify-start'>
       <h1 className='text-slate-50 font-bold uppercase '>Proyectos</h1>
-      <p className='text-slate-50 font-medium mt-2  '>Estos son algunos de mis proyectos</p>
+      <p className='text-slate-50 font-medium mt-2  '>Aquí puedes ver algunos de mis proyectos.</p>
 
 
       <div className={estilos.proyectos}>

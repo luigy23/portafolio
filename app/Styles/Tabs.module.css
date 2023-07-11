@@ -5,7 +5,7 @@
 
 
 .links li  {
-    @apply inline-block p-4 rounded-t-lg cursor-pointer hover:bg-smoke-900 transition-colors ease-in-out;
+    @apply inline-block p-4 rounded-t-lg cursor-pointer hover:bg-fercho-400 md:hover:bg-smoke-900 transition-colors ease-in-out;
 }
 
 .tab_active {
