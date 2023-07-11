@@ -26,7 +26,7 @@ h1 {
   @apply animate-bounce;
   /* posicion en la parte inferior del hero */
   position: absolute;
-  bottom: 0;
+  bottom: 2%;
   transform: translateX(-50%);
 
   
@@ -63,3 +63,4 @@ h1 {
   content: " ";
   filter: blur(120px);
 }
+

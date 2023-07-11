@@ -2,7 +2,7 @@ import React from 'react'
 
 const Down_Arrow = (props) => {
   return (
-    <svg
+    <svg 
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     stroke="currentColor"
