@@ -8,6 +8,7 @@ import Proyectos from './Secciones/Proyectos'
 import logo from '@/public/logoB.svg'
 import Link from 'next/link'
 import About from './Secciones/About'
+import Contact from './Secciones/Contact'
 
 
 export default function Home() {
@@ -30,6 +31,8 @@ export default function Home() {
       </section>
       <Proyectos  />
       <About />
+      <Contact />
+
 
       <span className='blob '></span>
 

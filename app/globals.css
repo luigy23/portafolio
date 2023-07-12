@@ -41,7 +41,7 @@ h1 {
 }
 
 .blob::after {
-  @apply absolute md:w-52 md:h-52 w-32 h-32 -right-20 top-[22%] rounded-full bg-fercho-400 opacity-100 z-0   ;
+  @apply absolute md:w-52 md:h-52 w-32 h-32 -right-20 top-[19%] rounded-full bg-fercho-400 opacity-100 z-0   ;
   content: "";
   filter: blur(120px);
 
@@ -71,6 +71,9 @@ h1 {
 
   /* animation: move-grow-fade 5s infinite; */
 }
+
+
+
 
 
 /* @keyframes move-grow-fade {

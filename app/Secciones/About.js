@@ -85,9 +85,9 @@ const About = () => {
                     <span className='w-full  -mt-10'><Colombia className='w-8'
                     /></span>
                 </div>
-                <div className='w-full md:w-1/3 p-2 mx-auto mt-2 mb-5 flex flex-col items-start  '>
+                <div className='w-full md:w-1/3 p-2 mx-auto mt-2 mb-5 flex flex-col md:items-start items-center '>
                     <h3 className='text-slate-100 font-bold uppercase mt-2 md:text-xl'>Estudios</h3>
-                    <ul className='text-slate-300 font-light mt-2 md:text-base text-sm overflow-visible w-full flex flex-col gap-3 md:items-start text-center'>
+                    <ul className='text-slate-300 font-light mt-2 md:text-base text-sm overflow-visible w-full flex flex-col gap-3 md:items-start items-center text-center'>
                         <li className='bg-smoke-900 px-2 py-1 rounded-lg w-[85%]'>
                             <span className='text-fercho-300 '>Técnico en diseño y programación de software <br /></span>
                             Instituto Técnico Superior Neiva | 2019-2020
@@ -112,7 +112,7 @@ const About = () => {
 
             </div>
 
-
+     
 
         </section>
     )
