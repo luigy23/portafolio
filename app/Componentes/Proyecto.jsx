@@ -3,10 +3,18 @@ import React from 'react'
 import estilos from '@/app/Styles/Proyecto.module.css'
 import Logo from '@/public/logoV.svg'
 
-const Proyecto = ({ nombre, img, des, tec }) => {
-    return (
+const Proyecto = ({ nombre, img, des, tec, link }) => {
 
-<div className={estilos.proyecto}>
+    
+    //nombre={proyecto.Nombre} des={proyecto.Descripcion} img={proyecto.img} tec={proyecto.Tecnologias}
+
+    return (
+          
+            <a 
+            href={link}
+            target="_blank"
+            
+            className={estilos.proyecto}> 
                 <div className={estilos.contenedorImg}>
                     <Image
                         src={(img ? img : Logo)}
@@ -34,8 +42,8 @@ const Proyecto = ({ nombre, img, des, tec }) => {
 
                 </div>
 
-            </div>
-
+            </a>
+     
 
 
 

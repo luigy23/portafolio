@@ -1,5 +1,5 @@
+import axios from "axios"
 import { useState } from "react"
-
 
 const FormContact = (props) => {
 
@@ -16,6 +16,48 @@ const FormContact = (props) => {
         })
     }
 
+
+    // const headers = new Headers()
+    // headers.append("Content-Type", "application/json")
+    
+    // const body = {
+    //   "test": "event"
+    // }
+    
+    // const options = {
+    //   method: "POST",
+    //   headers,
+    //   mode: "cors",
+    //   body: JSON.stringify(body),
+    // }
+    
+    // fetch("https://eoarflxnuysgqmp.m.pipedream.net", options)
+
+//mejoraremos el envío con axios:
+const enviar = () => {
+    const url = 'https://eoarflxnuysgqmp.m.pipedream.net'
+
+    const body = {
+        "nombre": form.name,
+        "email": form.email,
+        "mensaje": form.message
+    }
+
+    axios.post(url, body)
+    .then(resp => {
+        console.log(resp)
+        alert('Mensaje enviado correctamente')
+    }
+    )
+    .catch(err => {
+        console.log(err)
+        alert('Hubo un error al enviar el mensaje')
+    }
+    )
+    
+
+
+}
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -36,10 +78,18 @@ const FormContact = (props) => {
             return
         }
 
+        if(form.message.length < 10){
+            alert('El mensaje debe tener al menos 10 caracteres')
+            return
+        }
+
+        //enviar
+        enviar()
 
 
 
-        console.log(form)
+
+        //console.log(form)
     }
 
 //estilos con tailwind

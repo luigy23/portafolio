@@ -56,7 +56,7 @@ const Proyectos = () => {
           proyectosFiltrados &&
           proyectosFiltrados.map((proyecto, index) => {
               return (
-                <Proyecto key={index} nombre={proyecto.Nombre} des={proyecto.Descripcion} img={proyecto.img} tec={proyecto.Tecnologias} />
+                <Proyecto key={index} nombre={proyecto.Nombre} des={proyecto.Descripcion} img={proyecto.img} tec={proyecto.Tecnologias}  link={proyecto.link} />
               )
 
 
