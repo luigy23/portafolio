@@ -4,9 +4,7 @@ import logo from '@/public/logoB.svg'
 import Image from 'next/image'
 import MenuNav from '../Componentes/MenuNav'
 import { Whatsapp } from '../Icons/Whatsapp'
-import Laptop from '../Lotties/laptop'
-import Lottie from 'react-lottie-player'
-import laptop from '@/public/lotties/laptop.json'
+
 import Down_Arrow from '../Icons/Down_Arrow'
 export default function LandingDisenoWeb() {
   return (
