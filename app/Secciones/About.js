@@ -11,7 +11,9 @@ import { Illustrator } from '../Icons/Illustrator'
 import Webicon from '../Icons/Webicon'
 const About = () => {
     return (
-        <section className='w-full min-h-screen bg-smoke-800 blanco  flex flex-col items-center justify-start p-5'>
+        <section
+        id='#about'
+        className='w-full min-h-screen bg-smoke-800 blanco  flex flex-col items-center justify-start p-5'>
             {/* div para el contenido con su ancho correspondiente: */}
             <div className='w-full md:w-2/3 lg:w-w-2/3  xl:w-w-2/3 text-center'>
                 <h1 className='text-slate-100 font-bold uppercase '>Sobre mí</h1>

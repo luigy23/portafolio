@@ -14,10 +14,10 @@ const MenuNav = () => {
       <Link href="#proyectos">Proyectos</Link>
     </li>
     <li>
-      <Link href="#">About</Link>
+      <Link href="#about">About</Link>
     </li>
     <li>
-      <Link href="#">Contact</Link>
+      <Link href="#contacto">Contact</Link>
     </li>
   </ul>
   {/* abrir en otra pestaña */}
