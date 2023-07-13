@@ -12,7 +12,7 @@ import Webicon from '../Icons/Webicon'
 const About = () => {
     return (
         <section
-        id='#about'
+        id='about'
         className='w-full min-h-screen bg-smoke-800 blanco  flex flex-col items-center justify-start p-5'>
             {/* div para el contenido con su ancho correspondiente: */}
             <div className='w-full md:w-2/3 lg:w-w-2/3  xl:w-w-2/3 text-center'>
