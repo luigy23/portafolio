@@ -63,8 +63,9 @@ const Proyectos = () => {
 
           })
         }
- <span className='blob2 '></span>
-
+      <div>
+      <span className='blob2 '></span>
+</div>
       </div>
       </section>
 

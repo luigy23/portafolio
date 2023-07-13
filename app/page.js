@@ -23,7 +23,7 @@ export default function Home() {
 
         <h1 className='text-slate-50 font-bold uppercase '>Luigy <span className='text-fercho-400'>Leonardo</span> </h1>
         <h2 className='text-slate-50 font-medium mt-2  '>Desarrollador Web | Full-Stack</h2>
-        <button className='btn-contact'>Contactame <Left_Arrow /></button>
+        <Link href="#contacto" className='btn-contact gap-3'>Contactame <Left_Arrow /></Link>
         
        <Link href="#proyectos" className='down'> <Down_Arrow   className="text-slate-50 w-10  " /></Link>
 

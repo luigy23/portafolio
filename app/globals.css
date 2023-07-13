@@ -6,8 +6,14 @@ h1 {
   @apply text-4xl;
 }
 
+
+
+.contenido{
+  @apply max-w-lg flex flex-col items-center justify-center; 
+}
+
 .btn-contact {
-  @apply text-white bg-smoke-800 px-2 py-1 rounded-2xl border-2 my-5 border-fercho-400 flex gap-3
+  @apply text-white bg-smoke-800 px-2 py-1 rounded-2xl border-2 my-5 border-fercho-400 flex 
   transition-all ease-in-out
   ;
   box-shadow:-0.1em 0.4em 0px 0px #27F625;
