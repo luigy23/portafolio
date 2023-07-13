@@ -6,7 +6,9 @@ h1 {
   @apply text-4xl;
 }
 
-
+b {
+  @apply font-semibold;
+}
 
 .contenido{
   @apply max-w-lg flex flex-col items-center justify-center; 

@@ -2,14 +2,14 @@
 
 import React from 'react'
 import Lottie from 'react-lottie-player'
-import laptop from '@/public/lotties/diseno.json'
+import soporte from '@/public/lotties/soporte.json'
 
-const Laptop = (props) => {
+const Soporte = (props) => {
   return (
 <div {...props}>
     <Lottie
         loop
-        animationData={laptop}
+        animationData={soporte}
         play
         style={{ width: '100%', height: 'auto' }}
     />
@@ -17,4 +17,4 @@ const Laptop = (props) => {
   )
 }
 
-export default Laptop
+export default Soporte
