@@ -51,8 +51,10 @@
   }
 
   .menuOpen {
-
+    transform: translateX(0);
+    transition: transform 0.3s ease; 
   }
   .menuClose {
-    @apply hidden;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease; 
   }

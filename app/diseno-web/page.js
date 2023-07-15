@@ -10,6 +10,7 @@ import Soporte from '../Lotties/Soporte'
 import Detalles from '../Lotties/Detalles'
 import Contact from '../Secciones/Contact'
 import Proyectos from '../Secciones/Proyectos'
+import FloatingButton from '../Componentes/FloatingButton'
 
 export default function LandingDisenoWeb() {
   return (
