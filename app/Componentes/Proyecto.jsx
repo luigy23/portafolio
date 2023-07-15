@@ -35,7 +35,7 @@ const Proyecto = ({ nombre, img, des, tec, link }) => {
                     {
                     tec &&
                     tec.map((tecnologia, index) => (
-                        <span key={index} className='text-sm bg-fercho-300 px-2 py-1 rounded-lg mx-1 text-stone-950 '>{tecnologia}</span>
+                        <span key={index} className='text-sm bg-emerald-300 px-2 py-1 rounded-lg mx-1 text-stone-950 '>{tecnologia}</span>
                     ))
                     }
                     </div>

@@ -1,5 +1,5 @@
 .nav {
-    @apply w-full h-16 bg-smoke-900 flex items-center justify-center px-4;
+    @apply w-full h-16 bg-smoke-900 hidden md:flex items-center justify-center px-4;
     /* hacemos el menu siga con el scroll pero que ocupe su espacio al inicio */
     position: fixed;
     top: 0;
@@ -21,4 +21,38 @@
   
   .nav a {
     @apply text-slate-50 hover:text-fercho-400 transition-colors ease-in-out;
+  }
+
+
+  .navMobile {
+    @apply w-full h-screen bg-smoke-900 flex flex-col items-center justify-center ;
+    /* hacemos el menu siga con el scroll pero que ocupe su espacio al inicio */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+
+
+    
+
+  }
+
+  .navMobile ul {
+    @apply  items-center  flex-col flex gap-6 w-full mb-4;
+  }
+
+  .navMobile li {
+    @apply  text-slate-100;
+  }
+
+  .navMobile a {
+    @apply text-slate-50 hover:text-fercho-400 transition-colors ease-in-out;
+  }
+
+  .menuOpen {
+
+  }
+  .menuClose {
+    @apply hidden;
   }

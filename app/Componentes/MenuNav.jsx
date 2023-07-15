@@ -3,8 +3,11 @@ import estilos from '../Styles/MenuNav.module.css'
 import Link from 'next/link'
 import Github from '../Icons/Github' 
 import Linkedin from '../Icons/Linkedin'
+import MenuIcon from '../Icons/MenuIcon'
+import MenuMobile from './MenuMobile'
 const MenuNav = () => {
   return (
+<>
 <nav className={estilos.nav}>
   <ul>
     <li>
@@ -20,7 +23,7 @@ const MenuNav = () => {
       <Link href="#contacto">Contact</Link>
     </li>
   </ul>
-  {/* abrir en otra pestaña */}
+
   <a href="https://github.com/luigy23" target="_blank" rel="noopener noreferrer">
   <Github className="w-7 fill-fercho-400 mr-2
   hover:fill-slate-50 transition-colors ease-in-out
@@ -33,7 +36,14 @@ const MenuNav = () => {
     " />
   </a>
 </nav>
+<MenuMobile />
+
+
+</>
   )
 }
 
 export default MenuNav
+
+
+{/*  */}
