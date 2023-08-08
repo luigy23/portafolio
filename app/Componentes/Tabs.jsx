@@ -27,6 +27,12 @@ const Tabs = ({filtrar}) => {
             <li onClick={handleClick}>
                 React
             </li>
+            <li onClick={handleClick}>
+                Next Js
+            </li>
+            <li onClick={handleClick}>
+                Node
+            </li>
         </ul>
     )
 }

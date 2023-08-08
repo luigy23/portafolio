@@ -31,11 +31,11 @@ const Proyecto = ({ nombre, img, des, tec, link }) => {
                 <div className={estilos.content}>
                     <h3 className='font-semibold text-xl'>{nombre}</h3>
                     <p className=' text-sm mt-1 text-slate-300 whitespace-pre-wrap'>{des}</p>
-                    <div className='mt-4'>
+                    <div className='mt-4 gap-1 flex  overflow-x-scroll hide-scroll'>
                     {
                     tec &&
                     tec.map((tecnologia, index) => (
-                        <span key={index} className='text-sm bg-emerald-300 px-2 py-1 rounded-lg mx-1 text-stone-950 '>{tecnologia}</span>
+                        <span key={index} className='text-sm bg-emerald-300 whitespace-nowrap px-2 py-1 rounded-lg mx-1 text-stone-950 '>{tecnologia}</span>
                     ))
                     }
                     </div>

@@ -82,6 +82,14 @@ b {
 
 
 
+/* clase para ocultar barras de scroll */
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
 
 
 /* @keyframes move-grow-fade {
