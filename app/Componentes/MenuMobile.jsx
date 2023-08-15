@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react'
 import style from '@/app/Styles/MenuNav.module.css'
 import Link from 'next/link'

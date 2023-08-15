@@ -11,20 +11,23 @@ import Detalles from '../Lotties/Detalles'
 import Contact from '../Secciones/Contact'
 import Proyectos from '../Secciones/Proyectos'
 import FloatingButton from '../Componentes/FloatingButton'
+import MenuNav from '../Componentes/MenuNav'
 
 export default function LandingDisenoWeb() {
   return (
+    
+    <>
+    <MenuNav/>
     <main className='w-full overflow-x-hidden relative'>
 
       <section className='w-full min-h-screen bg-smoke-800 flex flex-col items-center justify-center relative '>
-        {/* div con dos columnas */}
-        <div className='w-full flex flex-col md:flex-row justify-center items-center  md:gap-5'>
+      
+        <div className=' w-10/12 md:w-full flex flex-col md:flex-row justify-center items-center   md:gap-5'>
           <Image src={logo} width={120} height={120} className='rounded-lg mb-3 object-cover ' alt='Logo de Luigy dev' />
-          <div className='contenido w-[80%] gap-3 py-6'>
-            {/* div con los textos a la izquierda: */}
+          <div className=' max-w-xl  gap-3 py-6'>
             <div className='flex flex-col items-center md:items-start gap-3'>
-              <h3 className='text-slate-50 font-bold uppercase text-5xl text-center md:text-left' >Creamos tu web</h3>
-              <p className='text-slate-300 text-center md:text-left text-xl'>
+              <h1 className={estilos.titulo} >Creamos tu web</h1>
+              <p className='text-slate-300 text-center md:text-left text-lg md:text-xl'>
                 haz trabajado duro en tu negocio, hay que mostrarlo al mundo con una web profesional.
               </p>
             </div>
@@ -122,7 +125,7 @@ export default function LandingDisenoWeb() {
 
 
     </main>
-
+    </>
 
   )
 }

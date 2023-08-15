@@ -18,3 +18,21 @@ border:1px solid rgba( 255, 255, 255, 0.18 ) ;
 .objetivo p {
     @apply text-smoke-700 text-center text-sm
 }
+
+.titulo{
+    @apply text-fercho-300 font-bold uppercase text-4xl md:text-6xl text-center md:text-left ;
+    background: linear-gradient(89.99deg, #60F25F 5.77%, #08F281 48.86%, #00F1A1 64.63%, #00EFBD 83.4%, #00EBD5 90.16%, #00E7E8 97.66%, #00E1F6 117.87%, #00DBFF 117.88%, #00D4FF 133.9%, #58CDFF 149.92%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+
+/* le creamos una sombra al titulo, el mismo texto pero por detrás: */
+
+
+/* Creamos Tu Web */
+
+
+
+
