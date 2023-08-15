@@ -20,7 +20,7 @@ export default function LandingDisenoWeb() {
     <MenuNav/>
     <main className='w-full overflow-x-hidden relative'>
 
-      <section className='w-full min-h-screen bg-smoke-800 flex flex-col items-center justify-center relative '>
+      <section className={estilos.hero}>
       
         <div className=' w-10/12 md:w-full flex flex-col md:flex-row justify-center items-center   md:gap-5'>
           <Image src={logo} width={120} height={120} className='rounded-lg mb-3 object-cover ' alt='Logo de Luigy dev' />
