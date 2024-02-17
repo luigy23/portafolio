@@ -17,7 +17,7 @@ export default function LandingDisenoWeb() {
   return (
     
     <>
-    <MenuNav/>
+   
     <main className='w-full overflow-x-hidden relative'>
 
       <section className={estilos.hero}>
