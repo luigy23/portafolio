@@ -10,6 +10,13 @@ b {
   @apply font-semibold;
 }
 
+
+.font-lora {
+    font-family: var(--font-lora);
+
+}
+
+
 .contenido{
   @apply max-w-lg flex flex-col items-center justify-center; 
 }
