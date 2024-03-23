@@ -10,6 +10,13 @@ b {
   @apply font-semibold;
 }
 
+
+.font-monse {
+    font-family: var(--font-montserrat);
+
+}
+
+
 .contenido{
   @apply max-w-lg flex flex-col items-center justify-center; 
 }

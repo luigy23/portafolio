@@ -1,11 +1,26 @@
 import './globals.css'
 
-import { Inter, Poppins } from 'next/font/google'
-const poppins = Poppins({ subsets: ['latin'],
-weight : [ '100', '200', '300', '400', '500', '600', '700', '800', '900']
+import { Inter, Montserrat, Rubik } from 'next/font/google'
+// const poppins = Poppins({ subsets: ['latin'],
+// weight : [ '100', '200', '300', '400', '500', '600', '700', '800', '900'],
+// variable: "--font-poppins"
+
+// })
+
+
+
+const montserrat = Montserrat({ subsets: ['latin'],
+weight : [ '400', '500', '600', '700'],
+variable: "--font-montserrat"
 
 })
-const inter = Inter({ subsets: ['latin'] })
+
+const rubik = Rubik({ subsets: ['latin'],
+weight : [ '400', '500', '600', '700'],
+variable: "--font-rubik"
+
+})
+
 
 
 export const metadata = {
@@ -16,7 +31,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={poppins.className}>{children}</body>
+      <body className={rubik.className + ' ' + montserrat.variable}>
+        {children}
+      </body>
+
     </html>
   )
 }

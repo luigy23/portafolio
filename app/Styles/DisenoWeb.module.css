@@ -1,55 +1,57 @@
+.hero {
+  @apply w-full pt-10 bg-smoke-800 flex flex-col items-center justify-center relative;
 
+  /* agregamos imagen de fondo, la imagen está en @/public/Global.jpg */
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 5%, rgb(26 26 30) 100%),
+    url("/edificios.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-.hero{
-
-    @apply w-full min-h-screen bg-smoke-800 flex flex-col items-center justify-center relative ;
-
-    /* agregamos imagen de fondo, la imagen está en @/public/Global.jpg */
-    background: linear-gradient(180deg, rgba(0, 0, 0, .6) 5%, rgb(26 26 30) 100%), url('/edificios.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    /* capa de color con degradado de claro a más oscuro encima de la imagen  para que se vea más oscura */
-   
-
-   
+  /* capa de color con degradado de claro a más oscuro encima de la imagen  para que se vea más oscura */
 }
 
-
-.ventaja{
-@apply text-smoke-700 bg-slate-200 p-3 rounded-md  bg-opacity-70 backdrop-blur-md;
-box-shadow: 0 8px 32px 0 rgba(3, 3, 3, 0.365);
-border:1px solid rgba( 255, 255, 255, 0.18 ) ;
+.ventaja {
+  @apply text-smoke-700 bg-slate-200 p-3 rounded-md  bg-opacity-70 backdrop-blur-md;
+  box-shadow: 0 8px 32px 0 rgba(3, 3, 3, 0.365);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.objetivo{
-    @apply bg-slate-100 w-64 items-center justify-center py-4 px-2 mt-5 gap-3 h-52;
-    box-shadow: -0.4em 0.4em 0px 0px #27F625;
+.objetivo {
+  @apply bg-slate-100 w-64 items-center justify-center py-4 px-2 mt-5 gap-3 h-52;
+  box-shadow: -0.4em 0.4em 0px 0px #27f625;
 }
 
-.objetivo h4{
-
-    @apply text-center font-semibold;
+.objetivo h4 {
+  @apply text-center font-semibold;
 }
 .objetivo p {
-    @apply text-smoke-700 text-center text-sm
+  @apply text-smoke-700 text-center text-sm;
 }
 
-.titulo{
-    @apply text-fercho-300 font-bold uppercase text-4xl md:text-6xl text-center md:text-left ;
-    background: linear-gradient(89.99deg, #60F25F 5.77%, #08F281 48.86%, #00F1A1 64.63%, #00EFBD 83.4%, #00EBD5 90.16%, #00E7E8 97.66%, #00E1F6 117.87%, #00DBFF 117.88%, #00D4FF 133.9%, #58CDFF 149.92%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+.titulo {
+  
+  @apply text-fercho-300 font-bold uppercase text-3xl md:text-6xl text-center md:text-center;
+  background: linear-gradient(
+    89.99deg,
+    #60f25f 5.77%,
+    #08f281 48.86%,
+    #00f1a1 64.63%,
+    #00efbd 83.4%,
+    #00ebd5 90.16%,
+    #00e7e8 97.66%,
+    #00e1f6 117.87%,
+    #00dbff 117.88%,
+    #00d4ff 133.9%,
+    #58cdff 149.92%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 /* le creamos una sombra al titulo, el mismo texto pero por detrás: */
 
-
 /* Creamos Tu Web */
-
-
-
-
