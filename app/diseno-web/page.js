@@ -25,7 +25,7 @@ export default function LandingDisenoWeb() {
 
                 <div className="flex gap-4 items-center  ">
 
-                  <p className="  mt-6  text-slate-300  text-center  text-lg text-left md:text-xl">
+                  <p className="  mt-6  text-slate-300  text-center  text-lg font-monse md:text-xl">
                     Ofrecemos soluciones de desarrollo web para empresas, que buscan
                     mejorar su presencia en línea y aumentar sus ventas.
                   </p>
