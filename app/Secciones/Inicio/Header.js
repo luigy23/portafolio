@@ -12,7 +12,7 @@ const Header = () => {
 
           <div className="flex gap-4 items-center  ">
 
-            <p className="  mt-6  text-slate-300  text-center  text-lg text-left md:text-xl">
+            <p className="  mt-6  text-slate-300  text-lg text-left md:text-xl">
               Desarrollamos Soluciones digitales a la medida de tu negocio.
             </p>
           </div>
