@@ -15,16 +15,25 @@ import MenuNav from "./Componentes/MenuNav";
 import GaleriaProyectos from "./Secciones/Inicio/GaleriaProyectos";
 import Header from "./Secciones/Inicio/Header";
 import SliderProyectos from "./Secciones/Inicio/Componentes/SliderProyectos";
+import Blob from "./Componentes/Blobs/Blob";
+import Arrows from "./Componentes/Blobs/Arrows";
 
 export default function LandingDisenoWeb() {
   return (
     <>
-      <main className="w-full overflow-x-hidden relative">
+      <main className="w-full justify-center flex flex-col items-center bg-darka overflow-x-hidden relative">
         <Header />
-        <GaleriaProyectos />
+       
+      
+        <SliderProyectos />
+        <Blob className={`after:top-[6%]   after:blur-[230px] after:md:w-96 after:md:h-96 after:-left-72 after:opacity-70
+         before:top-[6%] before:blur-[230px] before:md:w-96 before:md:h-96 before:-right-72 before:opacity-80 `} />
 
-
-        
+        <Arrows className="rotate-180 w-40" />
+        <div className="w-full justify-center flex flex-col items-center relative p-10 ">
+     
+     
+        </div>
         <section className="w-full   bg-smoke-800 flex flex-col items-center relative  py-5">
           {/* Ventajas */}
           <div className=" w-[80%] md:w-[60%] text-center gap-3 flex flex-col z-10">

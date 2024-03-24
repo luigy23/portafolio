@@ -30,18 +30,7 @@ const Header = () => {
 
 
 
-    <span
-      className="blob2 
-  after:top-[24%]
 
-
-  before:top-[24%]
-
-  z-0
-  
-  
-  "
-    ></span>
   </section>
   )
 }

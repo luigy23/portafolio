@@ -1,14 +1,14 @@
 .hero {
-  @apply w-full pt-10 bg-smoke-800 flex flex-col items-center justify-center relative;
+  @apply w-full pt-10 bg-darka  flex flex-col items-center justify-center relative;
 
   /* agregamos imagen de fondo, la imagen está en @/public/Global.jpg */
   /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 5%, rgb(26 26 30) 100%),
     url("/edificios.jpg"); */
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  /* capa de color con degradado de claro a más oscuro encima de la imagen  para que se vea más oscura */
 }
 
 .ventaja {
